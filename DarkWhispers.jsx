@@ -1,4 +1,7 @@
 import { useState, useEffect } from "react";
+// import useSound from 'use-sound';
+// import creepySound from './assets/creepy.mp3';
+
 const characters = [
   {
     name: "نادر",
@@ -49,7 +52,7 @@ export default function DarkWhispers() {
   const [challenge3Answer, setChallenge3Answer] = useState("");
   const [challenge3Solved, setChallenge3Solved] = useState(false);
   const [timeLeft, setTimeLeft] = useState(900);
-  const [play] = useSound(creepySound, { volume: 0.4 });
+  const play = () => {}; // تم تعطيل الصوت مؤقتًا
 
   const t = {
     ar: {
@@ -175,3 +178,4 @@ export default function DarkWhispers() {
     </div>
   );
 }
+
